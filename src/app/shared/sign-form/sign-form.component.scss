@@ -1,0 +1,62 @@
+.blur-form {
+  max-width: 100%;
+  padding: 16px;
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    font-family: var(--fontblod);
+  }
+}
+
+
+form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 3%;
+  align-items: center;
+
+}
+
+label {
+  display: none;
+}
+
+.row {
+  display: flex;
+  gap: 2em;
+}
+
+.full {
+  width: 98%;
+}
+
+input {
+  width: fit-content;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-block: 1%;
+}
+
+input:focus {
+  background-color: #f7f7f7be;
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.2s ease-out;
+  font-family: var(--fontblod);
+  border: none;
+
+  &:hover {
+    background-color: rgba(209, 209, 209, 0.452);
+    box-shadow: 1px 11px 22px -4px rgba(23, 23, 23, 0.651);
+  }
+
+}

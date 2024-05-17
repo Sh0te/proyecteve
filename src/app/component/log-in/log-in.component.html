@@ -1,0 +1,35 @@
+<div class="login-body">
+  <div class="padding">
+    <app-nav></app-nav>
+    <div class="text-align">
+
+      <div *ngIf="!title"
+        class="text-section">
+        <h1 class="title-eve">EVE</h1>
+        <div class="subtext-title">TAKE CONTROL OF YOUR LIVE</div>
+        <button class="btn"
+          *ngIf="!title"
+          (click)="changeTitle()">Empezar</button>
+      </div>
+
+      <div class="blur"
+        *ngIf="title">
+        <div *ngIf="singIn">
+          <h1>Log In</h1>
+
+          <app-log-form></app-log-form>
+          <button class="btn"
+            (click)="changeSingIn()">Registrarse</button>
+        </div>
+
+        <div *ngIf="!singIn">
+          <app-sign-form></app-sign-form>
+          <button class="btn"
+            (click)="changeSingIn()">Iniciar Sesion</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

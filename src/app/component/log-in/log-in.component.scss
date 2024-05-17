@@ -1,0 +1,66 @@
+.login-body {
+  height: 100vh;
+  background-image: url(../../shared/img/background.jpg);
+  background-size: cover;
+  filter: brightness(85%);
+
+  .blur {
+    background-color: rgba(255, 255, 255, 0.124);
+    backdrop-filter: blur(5px);
+    padding-inline: 5%;
+    border-radius: 5px;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    font-family: var(--fontblod);
+  }
+
+  .padding {
+    padding-inline: 3%;
+    padding-block: 2%;
+
+    .text-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title-eve {
+        font-size: 10em;
+        font-family: var(--fontblod);
+        color: rgba(0, 0, 0, 0.858);
+      }
+
+      .subtext-title {
+        margin-top: -10%;
+        font-family: var(--font);
+        font-weight: bold;
+      }
+    }
+
+    .text-align {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.091);
+    backdrop-filter: blur(5px);
+    transition: all 0.2s ease-out;
+    font-family: var(--font);
+    font-weight: bold;
+    margin-top: 3%;
+
+    &:hover {
+      box-shadow: 1px 11px 22px -4px rgba(23, 23, 23, 0.651);
+    }
+  }
+
+}

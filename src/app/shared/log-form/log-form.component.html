@@ -1,0 +1,26 @@
+<div class="blur-form">
+  <div class="blur-form">
+    <form #userForm="ngForm"
+      (ngSubmit)="onSubmit()"
+      method="POST">
+      <label for="dni">DNI:</label>
+      <input type="text"
+        id="dni"
+        name="dni"
+        [(ngModel)]="userLog.dni"
+        placeholder="DNI"
+        required><br>
+
+      <label for="password">Password</label>
+      <input type="password"
+        id="password"
+        name="password"
+        [(ngModel)]="userLog.password"
+        placeholder="Password"
+        required><br>
+
+      <input type="submit"
+        class="btn"
+        value="Ingresar Usuario">
+    </form>
+  </div>
