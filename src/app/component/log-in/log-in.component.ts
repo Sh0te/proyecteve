@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserService } from '../../service/user.service.service';
+import { ClienteService } from '../../service/cliente.service.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,15 +8,19 @@ import { Router } from '@angular/router';
   styleUrl: './log-in.component.scss'
 })
 export class LogInComponent {
-  constructor(private userService: UserService, private router: Router) { }
+  constructor(private userService: ClienteService, private router: Router) { }
+
   singIn = true;
-  title = false
+  title = false;
+
   changeSingIn() {
     this.singIn = !this.singIn;
   }
+
   changeTitle() {
     this.title = !this.title;
   }
+
   ngOnInit(): void {
   }
 }

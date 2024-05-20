@@ -5,8 +5,8 @@ import { Observable, catchError, map, of } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
-  url = "http://localhost/apis/eve/controller/usuarios";
+export class ClienteService {
+  url = "http://localhost/apis/apievebd/controlador/cliente";
   constructor(private http: HttpClient) { }
 
   getUsers(): Observable<any> {

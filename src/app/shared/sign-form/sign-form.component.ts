@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserService } from '../../service/user.service.service';
+import { ClienteService } from '../../service/cliente.service.service';
 import { Router } from '@angular/router';
 import { User } from '../../models/User';
 
@@ -9,7 +9,7 @@ import { User } from '../../models/User';
   styleUrl: './sign-form.component.scss'
 })
 export class SignFormComponent {
-  constructor(private userService: UserService, private router: Router) { }
+  constructor(private userService: ClienteService, private router: Router) { }
   user = new User(
     undefined, undefined, undefined, "", "", "", 0, "", 0, "", "", ""
   );
